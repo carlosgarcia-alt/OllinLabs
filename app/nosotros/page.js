@@ -43,11 +43,53 @@ export default function Nosotros() {
             from { transform: scale(0.5); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
           }
+          
+          /* Mobile Responsive Styles */
+          @media (max-width: 768px) {
+            .nav-mobile {
+              padding: 15px 20px !important;
+              flex-direction: column !important;
+              gap: 20px !important;
+            }
+            .nav-links {
+              display: flex !important;
+              gap: 20px !important;
+              flex-wrap: wrap !important;
+              justify-content: center !important;
+            }
+            .hero-section-mobile {
+              flex-direction: column !important;
+              padding: 40px 20px !important;
+              gap: 40px !important;
+              text-align: center !important;
+            }
+            .hero-title {
+              font-size: 36px !important;
+            }
+            .section-mobile {
+              padding: 40px 20px !important;
+            }
+            .process-grid {
+              grid-template-columns: 1fr !important;
+              gap: 30px !important;
+            }
+            .stats-grid {
+              grid-template-columns: repeat(2, 1fr) !important;
+              gap: 20px !important;
+            }
+            .footer-mobile {
+              padding: 40px 20px 30px !important;
+            }
+            .footer-grid {
+              grid-template-columns: 1fr !important;
+              gap: 30px !important;
+            }
+          }
         `
       }} />
 
       {/* Navigation */}
-      <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 60px', backgroundColor: '#ffffff', boxShadow: '0 2px 10px rgba(0,0,0,0.1)', animation: 'slideDown 0.8s ease-out' }}>
+      <nav className="nav-mobile" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 60px', backgroundColor: '#ffffff', boxShadow: '0 2px 10px rgba(0,0,0,0.1)', animation: 'slideDown 0.8s ease-out' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <div style={{ width: '32px', height: '32px', background: 'linear-gradient(45deg, #00D4AA, #0EA5E9)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', animation: 'pulse 2s infinite' }}>
             <span style={{ color: 'white', fontWeight: 'bold', fontSize: '18px' }}>O</span>
@@ -55,7 +97,7 @@ export default function Nosotros() {
           <span style={{ fontSize: '24px', fontWeight: 'bold', color: '#1E3A8A' }}>Ollin Labs</span>
         </div>
         
-        <div style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
+        <div className="nav-links" style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
           <a href="/" style={{ color: '#6b7280', textDecoration: 'none' }}>Inicio</a>
           <span style={{ color: '#00D4AA', fontWeight: '500' }}>Nosotros</span>
           <a href="/ecosystem" style={{ color: '#6b7280', textDecoration: 'none' }}>Ecosistema</a>
@@ -67,7 +109,7 @@ export default function Nosotros() {
       </nav>
 
       {/* Hero Section */}
-      <section style={{ 
+      <section className="hero-section-mobile" style={{ 
         padding: '80px 60px 60px', 
         display: 'flex',
         alignItems: 'center',
@@ -263,7 +305,7 @@ export default function Nosotros() {
             Nuestro proceso
           </h2>
 
-          <div style={{ display: 'grid', gap: '40px' }}>
+          <div className="process-grid" style={{ display: 'grid', gap: '40px' }}>
             {/* Step 1 */}
             <div style={{ 
               display: 'flex', 
@@ -448,9 +490,9 @@ export default function Nosotros() {
       </main>
 
       {/* Footer */}
-      <footer style={{ backgroundColor: '#1E3A8A', color: 'white', padding: '60px 60px 40px', marginTop: '80px' }}>
+      <footer className="footer-mobile" style={{ backgroundColor: '#1E3A8A', color: 'white', padding: '60px 60px 40px', marginTop: '80px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', marginBottom: '40px' }}>
+          <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', marginBottom: '40px' }}>
             
             {/* Company Info */}
             <div>

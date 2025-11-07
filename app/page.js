@@ -54,11 +54,48 @@ export default function Home() {
             from { transform: scale(0.5); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
           }
+          
+          /* Mobile Responsive Styles */
+          @media (max-width: 768px) {
+            .nav-mobile {
+              padding: 15px 20px !important;
+              flex-direction: column !important;
+              gap: 20px !important;
+            }
+            .nav-links {
+              display: flex !important;
+              gap: 20px !important;
+              flex-wrap: wrap !important;
+              justify-content: center !important;
+            }
+            .hero-mobile {
+              flex-direction: column !important;
+              padding: 40px 20px !important;
+              gap: 40px !important;
+              text-align: center !important;
+            }
+            .hero-title {
+              font-size: 36px !important;
+            }
+            .hero-text {
+              max-width: 100% !important;
+            }
+            .dashboard-mobile {
+              max-width: 100% !important;
+            }
+            .footer-mobile {
+              padding: 40px 20px 30px !important;
+            }
+            .footer-grid {
+              grid-template-columns: 1fr !important;
+              gap: 30px !important;
+            }
+          }
         `
       }} />
 
       {/* Navigation */}
-      <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 60px', backgroundColor: '#ffffff', animation: 'slideDown 0.8s ease-out' }}>
+      <nav className="nav-mobile" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 60px', backgroundColor: '#ffffff', animation: 'slideDown 0.8s ease-out' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <div style={{ width: '32px', height: '32px', background: 'linear-gradient(45deg, #00D4AA, #0EA5E9)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', animation: 'pulse 2s infinite' }}>
             <span style={{ color: 'white', fontWeight: 'bold', fontSize: '18px' }}>O</span>
@@ -66,7 +103,7 @@ export default function Home() {
           <span style={{ fontSize: '24px', fontWeight: 'bold', color: '#1E3A8A' }}>Ollin Labs</span>
         </div>
         
-        <div style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
+        <div className="nav-links" style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
           <span style={{ color: '#00D4AA', fontWeight: '500' }}>Inicio</span>
           <a href="/nosotros" style={{ color: '#6b7280', textDecoration: 'none' }}>Nosotros</a>
           <a href="/ecosystem" style={{ color: '#6b7280', textDecoration: 'none' }}>Ecosistema</a>
@@ -78,18 +115,18 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <main style={{ display: 'flex', alignItems: 'center', padding: '80px 60px', gap: '80px' }}>
+      <main className="hero-mobile" style={{ display: 'flex', alignItems: 'center', padding: '80px 60px', gap: '80px' }}>
         <div style={{ flex: 1, animation: 'slideInLeft 1s ease-out' }}>
           <div style={{ width: '60px', height: '60px', background: 'linear-gradient(45deg, #00D4AA, #0EA5E9)', borderRadius: '12px', marginBottom: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', animation: 'float 3s ease-in-out infinite' }}>
             <div style={{ width: '30px', height: '30px', background: 'rgba(255,255,255,0.3)', borderRadius: '6px' }}></div>
           </div>
           
-          <h1 style={{ fontSize: '64px', fontWeight: 'bold', color: '#1E3A8A', lineHeight: '1.1', margin: '0 0 24px 0', animation: 'fadeInUp 1.2s ease-out 0.3s both' }}>
+          <h1 className="hero-title" style={{ fontSize: '64px', fontWeight: 'bold', color: '#1E3A8A', lineHeight: '1.1', margin: '0 0 24px 0', animation: 'fadeInUp 1.2s ease-out 0.3s both' }}>
             Somos desarrolladores<br />
             de software avanzado
           </h1>
           
-          <p style={{ fontSize: '18px', color: '#6b7280', lineHeight: '1.6', marginBottom: '40px', maxWidth: '500px', animation: 'fadeInUp 1.2s ease-out 0.6s both' }}>
+          <p className="hero-text" style={{ fontSize: '18px', color: '#6b7280', lineHeight: '1.6', marginBottom: '40px', maxWidth: '500px', animation: 'fadeInUp 1.2s ease-out 0.6s both' }}>
             Aceleramos la evolución digital mediante soluciones personalizadas que transforman ideas en realidades tecnológicas.
           </p>
 
@@ -111,7 +148,7 @@ export default function Home() {
         </div>
 
         {/* Dashboard Mockup */}
-        <div style={{ flex: 1, position: 'relative', animation: 'slideInRight 1s ease-out 0.5s both' }}>
+        <div className="dashboard-mobile" style={{ flex: 1, position: 'relative', animation: 'slideInRight 1s ease-out 0.5s both' }}>
           <div style={{ 
             background: 'linear-gradient(135deg, #1E3A8A 0%, #0EA5E9 100%)', 
             borderRadius: '16px', 
@@ -183,9 +220,9 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer style={{ backgroundColor: '#1E3A8A', color: 'white', padding: '60px 60px 40px' }}>
+      <footer className="footer-mobile" style={{ backgroundColor: '#1E3A8A', color: 'white', padding: '60px 60px 40px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', marginBottom: '40px' }}>
+          <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', marginBottom: '40px' }}>
             
             {/* Company Info */}
             <div>

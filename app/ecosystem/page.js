@@ -96,11 +96,45 @@ export default function Ecosystem() {
             from { transform: rotate(-180deg) scale(0); opacity: 0; }
             to { transform: rotate(0deg) scale(1); opacity: 1; }
           }
+          
+          /* Mobile Responsive Styles */
+          @media (max-width: 768px) {
+            .nav-mobile {
+              padding: 15px 20px !important;
+              flex-direction: column !important;
+              gap: 20px !important;
+            }
+            .nav-links {
+              display: flex !important;
+              gap: 20px !important;
+              flex-wrap: wrap !important;
+              justify-content: center !important;
+            }
+            .hero-section-mobile {
+              padding: 40px 20px !important;
+              text-align: center !important;
+            }
+            .hero-title {
+              font-size: 36px !important;
+            }
+            .projects-grid {
+              grid-template-columns: 1fr !important;
+              gap: 30px !important;
+              padding: 40px 20px !important;
+            }
+            .footer-mobile {
+              padding: 40px 20px 30px !important;
+            }
+            .footer-grid {
+              grid-template-columns: 1fr !important;
+              gap: 30px !important;
+            }
+          }
         `
       }} />
 
       {/* Navigation */}
-      <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 60px', backgroundColor: '#ffffff' }}>
+      <nav className="nav-mobile" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 60px', backgroundColor: '#ffffff' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <div style={{ width: '32px', height: '32px', background: 'linear-gradient(45deg, #00D4AA, #0EA5E9)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <span style={{ color: 'white', fontWeight: 'bold', fontSize: '18px' }}>O</span>
@@ -108,7 +142,7 @@ export default function Ecosystem() {
           <span style={{ fontSize: '24px', fontWeight: 'bold', color: '#1E3A8A' }}>Ollin Labs</span>
         </div>
         
-        <div style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
+        <div className="nav-links" style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
           <a href="/" style={{ color: '#6b7280', textDecoration: 'none' }}>Inicio</a>
           <a href="/nosotros" style={{ color: '#6b7280', textDecoration: 'none' }}>Nosotros</a>
           <span style={{ color: '#00D4AA', fontWeight: '500' }}>Ecosistema</span>
@@ -120,7 +154,7 @@ export default function Ecosystem() {
       </nav>
 
       {/* Hero Section */}
-      <section style={{ 
+      <section className="hero-section-mobile" style={{ 
         padding: '80px 60px', 
         display: 'flex',
         alignItems: 'center',
@@ -803,7 +837,7 @@ export default function Ecosystem() {
       </section>
 
       {/* Projects Grid - Resumen */}
-      <section style={{ padding: '0 60px 80px' }}>
+      <section className="projects-grid" style={{ padding: '0 60px 80px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center', marginBottom: '60px' }}>
           <h2 style={{ fontSize: '42px', fontWeight: 'bold', color: '#1E3A8A', margin: '0 0 24px 0' }}>
             Resumen del Ecosistema
@@ -899,9 +933,9 @@ export default function Ecosystem() {
       </section>
 
       {/* Footer */}
-      <footer style={{ backgroundColor: '#1E3A8A', color: 'white', padding: '60px 60px 40px' }}>
+      <footer className="footer-mobile" style={{ backgroundColor: '#1E3A8A', color: 'white', padding: '60px 60px 40px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', marginBottom: '40px' }}>
+          <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', marginBottom: '40px' }}>
             
             {/* Company Info */}
             <div>
