@@ -453,8 +453,8 @@ export default function Contacto() {
                 <h3 style={{ fontSize: '16px', fontWeight: '600', color: '#1E3A8A', margin: '0 0 4px 0' }}>
                   Email
                 </h3>
-                <a href="mailto:contacto@ollinlabs.com" style={{ color: '#6b7280', textDecoration: 'none', fontSize: '14px' }}>
-                  contacto@ollinlabs.com
+                <a href="mailto:ollinlabs@gmail.com" style={{ color: '#6b7280', textDecoration: 'none', fontSize: '14px' }}>
+                  ollinlabs@gmail.com
                 </a>
               </div>
 
@@ -477,7 +477,7 @@ export default function Contacto() {
                   Redes sociales
                 </h3>
                 <div style={{ display: 'flex', gap: '8px', justifyContent: 'center' }}>
-                  <a href="#" style={{ 
+                  <a href="https://www.facebook.com/profile.php?id=61583413809176&locale=es_LA" target="_blank" rel="noopener noreferrer" style={{ 
                     display: 'flex', 
                     alignItems: 'center', 
                     justifyContent: 'center',
@@ -577,7 +577,7 @@ export default function Contacto() {
               <div>
                 <p style={{ color: '#a5b4fc', margin: '0 0 12px 0' }}>Síguenos:</p>
                 <div style={{ display: 'flex', gap: '12px' }}>
-                  <a href="#" style={{ 
+                  <a href="https://www.facebook.com/profile.php?id=61583413809176&locale=es_LA" target="_blank" rel="noopener noreferrer" style={{ 
                     display: 'flex', 
                     alignItems: 'center', 
                     justifyContent: 'center',

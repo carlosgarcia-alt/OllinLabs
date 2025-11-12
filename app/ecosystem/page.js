@@ -1015,7 +1015,7 @@ export default function Ecosystem() {
               <div>
                 <p style={{ color: '#a5b4fc', margin: '0 0 12px 0' }}>Síguenos:</p>
                 <div style={{ display: 'flex', gap: '12px' }}>
-                  <a href="#" style={{ 
+                  <a href="https://www.facebook.com/profile.php?id=61583413809176&locale=es_LA" target="_blank" rel="noopener noreferrer" style={{ 
                     display: 'flex', 
                     alignItems: 'center', 
                     justifyContent: 'center',
