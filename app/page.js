@@ -269,7 +269,7 @@ export default function Home() {
               border: '1px solid #e2e8f0',
               position: 'relative'
             }}>
-              <a href="#" style={{ 
+              <a href="https://contlity.io/" target="_blank" rel="noopener noreferrer" style={{ 
                 background: 'linear-gradient(45deg, #00D4AA, #0EA5E9)',
                 color: 'white', 
                 border: 'none', 
