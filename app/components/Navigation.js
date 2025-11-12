@@ -4,7 +4,7 @@ export default function Navigation({ currentPage = 'inicio' }) {
   return (
     <nav className="nav-mobile" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 60px', backgroundColor: '#ffffff', animation: 'slideDown 0.8s ease-out' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <img src="/ollin-logo-3.svg" alt="Ollin Labs" style={{ height: '48px', width: 'auto' }} />
+        <img src="/ollin-logo-new.svg" alt="Ollin Labs" style={{ height: '48px', width: 'auto' }} />
         <span style={{ fontSize: '24px', fontWeight: 'bold', color: '#1E3A8A' }}>Ollin Labs</span>
       </div>
       

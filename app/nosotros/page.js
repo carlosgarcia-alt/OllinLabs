@@ -502,7 +502,7 @@ export default function Nosotros() {
             {/* Company Info */}
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '20px' }}>
-                <img src="/ollin-logo-3.svg" alt="Ollin Labs" style={{ height: '48px', width: 'auto' }} />
+                <img src="/ollin-logo-new.svg" alt="Ollin Labs" style={{ height: '48px', width: 'auto' }} />
                 <span style={{ fontSize: '24px', fontWeight: 'bold' }}>Ollin Labs</span>
               </div>
               <p style={{ color: '#a5b4fc', lineHeight: '1.4', margin: 0, fontSize: '12px', fontFamily: 'monospace', letterSpacing: '0.5px' }}>
