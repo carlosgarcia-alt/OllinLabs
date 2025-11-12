@@ -266,8 +266,25 @@ export default function Home() {
               padding: '40px', 
               borderRadius: '20px',
               boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
-              border: '1px solid #e2e8f0'
+              border: '1px solid #e2e8f0',
+              position: 'relative'
             }}>
+              <a href="#" style={{ 
+                background: 'linear-gradient(45deg, #00D4AA, #0EA5E9)',
+                color: 'white', 
+                border: 'none', 
+                padding: '8px 16px', 
+                borderRadius: '6px', 
+                fontWeight: '500',
+                fontSize: '12px',
+                textDecoration: 'none',
+                display: 'inline-block',
+                position: 'absolute',
+                top: '40px',
+                right: '40px'
+              }}>
+                Preview →
+              </a>
               <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '24px' }}>
                 <div style={{ 
                   width: '60px', 
@@ -331,20 +348,6 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-
-              <a href="#" style={{ 
-                background: 'linear-gradient(45deg, #00D4AA, #0EA5E9)',
-                color: 'white', 
-                border: 'none', 
-                padding: '12px 24px', 
-                borderRadius: '8px', 
-                fontWeight: '500',
-                fontSize: '14px',
-                textDecoration: 'none',
-                display: 'inline-block'
-              }}>
-                Saber Más →
-              </a>
             </div>
 
             {/* Contlity Animation */}
@@ -428,8 +431,25 @@ export default function Home() {
               padding: '40px', 
               borderRadius: '20px',
               boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
-              border: '1px solid #e2e8f0'
+              border: '1px solid #e2e8f0',
+              position: 'relative'
             }}>
+              <a href="https://alamano-customer-website.vercel.app/" target="_blank" style={{ 
+                background: 'linear-gradient(45deg, #0EA5E9, #1E3A8A)',
+                color: 'white', 
+                border: 'none', 
+                padding: '8px 16px', 
+                borderRadius: '6px', 
+                fontWeight: '500',
+                fontSize: '12px',
+                textDecoration: 'none',
+                display: 'inline-block',
+                position: 'absolute',
+                top: '40px',
+                right: '40px'
+              }}>
+                Preview →
+              </a>
               <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '24px' }}>
                 <div style={{ 
                   width: '60px', 
@@ -490,20 +510,6 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-
-              <a href="https://alamano-customer-website.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ 
-                background: 'linear-gradient(45deg, #0EA5E9, #1E3A8A)',
-                color: 'white', 
-                border: 'none', 
-                padding: '12px 24px', 
-                borderRadius: '8px', 
-                fontWeight: '500',
-                fontSize: '14px',
-                textDecoration: 'none',
-                display: 'inline-block'
-              }}>
-                Saber Más →
-              </a>
             </div>
 
             {/* A la Mano Animation */}
@@ -598,8 +604,25 @@ export default function Home() {
               padding: '40px', 
               borderRadius: '20px',
               boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
-              border: '1px solid #e2e8f0'
+              border: '1px solid #e2e8f0',
+              position: 'relative'
             }}>
+              <a href="https://mevi-sv1a.vercel.app/" target="_blank" style={{ 
+                background: 'linear-gradient(45deg, #1E3A8A, #00D4AA)',
+                color: 'white', 
+                border: 'none', 
+                padding: '8px 16px', 
+                borderRadius: '6px', 
+                fontWeight: '500',
+                fontSize: '12px',
+                textDecoration: 'none',
+                display: 'inline-block',
+                position: 'absolute',
+                top: '40px',
+                right: '40px'
+              }}>
+                Preview →
+              </a>
               <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '24px' }}>
                 <div style={{ 
                   width: '60px', 
@@ -663,20 +686,6 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-
-              <a href="https://mevi-sv1a.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ 
-                background: 'linear-gradient(45deg, #1E3A8A, #00D4AA)',
-                color: 'white', 
-                border: 'none', 
-                padding: '12px 24px', 
-                borderRadius: '8px', 
-                fontWeight: '500',
-                fontSize: '14px',
-                textDecoration: 'none',
-                display: 'inline-block'
-              }}>
-                Saber Más →
-              </a>
             </div>
 
             {/* Mevi Pro Animation */}

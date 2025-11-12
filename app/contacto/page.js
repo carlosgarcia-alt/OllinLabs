@@ -83,7 +83,7 @@ export default function Contacto() {
             }
             .hero-section-mobile {
               flex-direction: column !important;
-              padding: 20px 15px !important;
+              padding: 40px 15px !important;
               gap: 25px !important;
               text-align: center !important;
             }
@@ -91,8 +91,18 @@ export default function Contacto() {
               font-size: 28px !important;
               line-height: 1.2 !important;
             }
-            .contact-form {
+            .contact-form-mobile {
               padding: 20px 15px !important;
+            }
+            .contact-form-container {
+              padding: 20px !important;
+            }
+            .form-grid-mobile {
+              grid-template-columns: 1fr !important;
+            }
+            .contact-info-mobile {
+              flex-direction: column !important;
+              gap: 30px !important;
             }
             .footer-mobile {
               padding: 30px 15px 20px !important;
@@ -246,11 +256,11 @@ export default function Contacto() {
       </section>
 
       {/* Contact Content */}
-      <section style={{ padding: '0 60px 80px' }}>
+      <section className="contact-form-mobile" style={{ padding: '0 60px 80px' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           
           {/* Contact Form */}
-          <div style={{ background: 'white', borderRadius: '16px', padding: '40px', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', border: '1px solid #f1f5f9', marginBottom: '60px', animation: 'slideInLeft 1s ease-out 0.9s both' }}>
+          <div className="contact-form-container" style={{ background: 'white', borderRadius: '16px', padding: '40px', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', border: '1px solid #f1f5f9', marginBottom: '60px', animation: 'slideInLeft 1s ease-out 0.9s both' }}>
             <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: '#1E3A8A', margin: '0 0 24px 0' }}>
               Envíanos un mensaje
             </h2>
@@ -259,7 +269,7 @@ export default function Contacto() {
             </p>
 
             <form style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+              <div className="form-grid-mobile" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                 <div>
                   <label style={{ display: 'block', fontSize: '14px', fontWeight: '500', color: '#1E3A8A', marginBottom: '8px' }}>
                     Nombre *
@@ -400,7 +410,7 @@ export default function Contacto() {
               Información de contacto
             </h2>
 
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '60px', flexWrap: 'wrap' }}>
+            <div className="contact-info-mobile" style={{ display: 'flex', justifyContent: 'center', gap: '60px', flexWrap: 'wrap' }}>
               
               {/* Phone */}
               <div style={{ textAlign: 'center', animation: 'fadeInUp 1s ease-out 1.5s both' }}>

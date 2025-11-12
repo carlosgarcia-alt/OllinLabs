@@ -321,8 +321,25 @@ export default function Ecosystem() {
             padding: '50px', 
             borderRadius: '24px',
             boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
-            border: '2px solid #e2e8f0'
+            border: '2px solid #e2e8f0',
+            position: 'relative'
           }}>
+            <a href="#" style={{ 
+              background: 'linear-gradient(45deg, #00D4AA, #0EA5E9)',
+              color: 'white', 
+              border: 'none', 
+              padding: '8px 16px', 
+              borderRadius: '6px', 
+              fontWeight: '500',
+              fontSize: '12px',
+              textDecoration: 'none',
+              display: 'inline-block',
+              position: 'absolute',
+              top: '50px',
+              right: '50px'
+            }}>
+              Preview →
+            </a>
             <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '32px' }}>
               <div style={{ 
                 width: '60px', 
@@ -358,21 +375,6 @@ export default function Ecosystem() {
             <p style={{ fontSize: '20px', color: '#1E3A8A', lineHeight: '1.8', fontWeight: '600' }}>
               Representa el pilar tecnológico del ecosistema Ollin Labs, transformando la contabilidad tradicional en una experiencia digital, accesible y proactiva.
             </p>
-            
-            <div style={{ marginTop: '32px' }}>
-              <a href="#" style={{
-                background: 'linear-gradient(45deg, #00D4AA, #0EA5E9)',
-                color: 'white',
-                padding: '12px 24px',
-                borderRadius: '8px',
-                textDecoration: 'none',
-                fontWeight: '600',
-                display: 'inline-block',
-                transition: 'transform 0.2s ease'
-              }}>
-                Saber más →
-              </a>
-            </div>
           </div>
 
           {/* Contlity Animation */}
@@ -476,8 +478,25 @@ export default function Ecosystem() {
             padding: '50px', 
             borderRadius: '24px',
             boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
-            border: '2px solid #e2e8f0'
+            border: '2px solid #e2e8f0',
+            position: 'relative'
           }}>
+            <a href="https://alamano-customer-website.vercel.app/" target="_blank" style={{ 
+              background: 'linear-gradient(45deg, #0EA5E9, #1E3A8A)',
+              color: 'white', 
+              border: 'none', 
+              padding: '8px 16px', 
+              borderRadius: '6px', 
+              fontWeight: '500',
+              fontSize: '12px',
+              textDecoration: 'none',
+              display: 'inline-block',
+              position: 'absolute',
+              top: '50px',
+              right: '50px'
+            }}>
+              Preview →
+            </a>
             <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '32px' }}>
               <div style={{ 
                 width: '60px', 
@@ -510,21 +529,6 @@ export default function Ecosystem() {
             <p style={{ fontSize: '20px', color: '#1E3A8A', lineHeight: '1.8', fontWeight: '600' }}>
               A la Mano integra un sistema de suscripciones escalables para prestadores, junto con un modelo de comisión por transacción, creando un ecosistema autosostenible que digitaliza oficios y fomenta la economía local. Su enfoque tecnológico y humano la convierte en una de las soluciones más accesibles e inclusivas dentro del portafolio de Ollin Labs.
             </p>
-            
-            <div style={{ marginTop: '32px' }}>
-              <a href="https://alamano-customer-website.vercel.app/" style={{
-                background: 'linear-gradient(45deg, #0EA5E9, #1E3A8A)',
-                color: 'white',
-                padding: '12px 24px',
-                borderRadius: '8px',
-                textDecoration: 'none',
-                fontWeight: '600',
-                display: 'inline-block',
-                transition: 'transform 0.2s ease'
-              }}>
-                Saber más →
-              </a>
-            </div>
           </div>
 
           {/* A la Mano Animation */}
@@ -639,8 +643,25 @@ export default function Ecosystem() {
             padding: '50px', 
             borderRadius: '24px',
             boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
-            border: '2px solid #e2e8f0'
+            border: '2px solid #e2e8f0',
+            position: 'relative'
           }}>
+            <a href="https://mevi-sv1a.vercel.app/" target="_blank" style={{ 
+              background: 'linear-gradient(45deg, #1E3A8A, #00D4AA)',
+              color: 'white', 
+              border: 'none', 
+              padding: '8px 16px', 
+              borderRadius: '6px', 
+              fontWeight: '500',
+              fontSize: '12px',
+              textDecoration: 'none',
+              display: 'inline-block',
+              position: 'absolute',
+              top: '50px',
+              right: '50px'
+            }}>
+              Preview →
+            </a>
             <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '32px' }}>
               <div style={{ 
                 width: '60px', 
@@ -676,21 +697,6 @@ export default function Ecosystem() {
             <p style={{ fontSize: '20px', color: '#1E3A8A', lineHeight: '1.8', fontWeight: '600' }}>
               Más que una herramienta de administración, Mevi Pro es un asistente digital integral que impulsa la modernización de los servicios de belleza, ayudando a los negocios a escalar de forma eficiente y rentable.
             </p>
-            
-            <div style={{ marginTop: '32px' }}>
-              <a href="https://mevi-sv1a.vercel.app/" style={{
-                background: 'linear-gradient(45deg, #1E3A8A, #00D4AA)',
-                color: 'white',
-                padding: '12px 24px',
-                borderRadius: '8px',
-                textDecoration: 'none',
-                fontWeight: '600',
-                display: 'inline-block',
-                transition: 'transform 0.2s ease'
-              }}>
-                Saber más →
-              </a>
-            </div>
           </div>
 
           {/* Mevi Pro Animation */}
