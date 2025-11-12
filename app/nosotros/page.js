@@ -1,4 +1,5 @@
 'use client';
+import Navigation from '../components/Navigation';
 
 export default function Nosotros() {
   return (
@@ -42,6 +43,25 @@ export default function Nosotros() {
           @keyframes countUp {
             from { transform: scale(0.5); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
+          }
+          
+          /* Ollin Labs Signature Dropdown Styles */
+          .dropdown-container:hover .dropdown-menu {
+            display: block !important;
+            animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          
+          .dropdown-menu a:hover {
+            background: linear-gradient(135deg, rgba(0, 212, 170, 0.1) 0%, rgba(14, 165, 233, 0.05) 100%) !important;
+            border-left: 3px solid transparent !important;
+            border-image: linear-gradient(45deg, #00D4AA, #0EA5E9) 1 !important;
+            color: #00D4AA !important;
+            transform: translateX(4px) !important;
+          }
+          
+          .dropdown-menu a:hover div {
+            transform: scale(1.2) !important;
+            box-shadow: 0 0 12px rgba(0, 212, 170, 0.4) !important;
           }
           
           /* Mobile Responsive Styles */
@@ -91,24 +111,7 @@ export default function Nosotros() {
       }} />
 
       {/* Navigation */}
-      <nav className="nav-mobile" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 60px', backgroundColor: '#ffffff', boxShadow: '0 2px 10px rgba(0,0,0,0.1)', animation: 'slideDown 0.8s ease-out' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <div style={{ width: '32px', height: '32px', background: 'linear-gradient(45deg, #00D4AA, #0EA5E9)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', animation: 'pulse 2s infinite' }}>
-            <span style={{ color: 'white', fontWeight: 'bold', fontSize: '18px' }}>O</span>
-          </div>
-          <span style={{ fontSize: '24px', fontWeight: 'bold', color: '#1E3A8A' }}>Ollin Labs</span>
-        </div>
-        
-        <div className="nav-links" style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
-          <a href="/" style={{ color: '#6b7280', textDecoration: 'none' }}>Inicio</a>
-          <span style={{ color: '#00D4AA', fontWeight: '500' }}>Nosotros</span>
-          <a href="/ecosystem" style={{ color: '#6b7280', textDecoration: 'none' }}>Ecosistema</a>
-          <a href="/contacto" style={{ color: '#6b7280', textDecoration: 'none' }}>Contacto</a>
-        </div>
-
-        <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-        </div>
-      </nav>
+      <Navigation currentPage="nosotros" />
 
       {/* Hero Section */}
       <section className="hero-section-mobile" style={{ 
@@ -499,9 +502,7 @@ export default function Nosotros() {
             {/* Company Info */}
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '20px' }}>
-                <div style={{ width: '32px', height: '32px', background: 'linear-gradient(45deg, #00D4AA, #0EA5E9)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <span style={{ color: 'white', fontWeight: 'bold', fontSize: '18px' }}>O</span>
-                </div>
+                <img src="/ollin-logo-3.svg" alt="Ollin Labs" style={{ height: '48px', width: 'auto' }} />
                 <span style={{ fontSize: '24px', fontWeight: 'bold' }}>Ollin Labs</span>
               </div>
               <p style={{ color: '#a5b4fc', lineHeight: '1.4', margin: 0, fontSize: '12px', fontFamily: 'monospace', letterSpacing: '0.5px' }}>

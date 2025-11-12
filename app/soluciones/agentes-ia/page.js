@@ -1,0 +1,119 @@
+'use client';
+import Navigation from '../../components/Navigation';
+
+export default function AgentesIA() {
+  return (
+    <div style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif', margin: 0, backgroundColor: '#ffffff' }}>
+      <style dangerouslySetInnerHTML={{
+        __html: `
+          @keyframes slideDown { from { transform: translateY(-100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+          @keyframes fadeInUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+          @keyframes slideInLeft { from { transform: translateX(-50px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+          @keyframes slideInRight { from { transform: translateX(50px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+          @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+          @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+          .dropdown-container:hover .dropdown-menu { display: block !important; animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+          .dropdown-menu a:hover { background: linear-gradient(135deg, rgba(0, 212, 170, 0.1) 0%, rgba(14, 165, 233, 0.05) 100%) !important; color: #00D4AA !important; transform: translateX(4px) !important; }
+          @media (max-width: 768px) { .nav-mobile { padding: 10px 15px !important; flex-direction: column !important; gap: 15px !important; } .nav-links { display: flex !important; gap: 15px !important; flex-wrap: wrap !important; justify-content: center !important; font-size: 14px !important; } .hero-section-mobile { padding: 40px 15px !important; flex-direction: column !important; text-align: center !important; } .hero-title { font-size: 28px !important; line-height: 1.2 !important; } .footer-mobile { padding: 30px 15px 20px !important; } .footer-grid { grid-template-columns: 1fr !important; gap: 20px !important; } }
+        `
+      }} />
+
+      <Navigation currentPage="soluciones/agentes-ia" />
+
+      <section className="hero-section-mobile" style={{ padding: '80px 60px', background: 'linear-gradient(135deg, #00D4AA 0%, #0EA5E9 50%, #1E3A8A 100%)', color: 'white', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'relative', zIndex: 1, maxWidth: '1200px', margin: '0 auto' }}>
+          <h1 className="hero-title" style={{ fontSize: '56px', fontWeight: 'bold', margin: '0 0 32px 0', background: 'linear-gradient(45deg, #ffffff, #f0f9ff)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', animation: 'fadeInUp 1s ease-out 0.2s both' }}>Agentes IA</h1>
+          <p style={{ fontSize: '24px', lineHeight: '1.6', margin: '0 auto 40px', opacity: 0.95, maxWidth: '800px', animation: 'fadeInUp 1s ease-out 0.4s both' }}>
+            Automatiza procesos complejos con agentes inteligentes que aprenden y se adaptan a tu negocio.
+          </p>
+        </div>
+      </section>
+
+      <section style={{ padding: '80px 60px', maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ marginBottom: '80px', animation: 'fadeInUp 1s ease-out 0.2s both' }}>
+          <h2 style={{ fontSize: '42px', fontWeight: 'bold', color: '#1E3A8A', marginBottom: '32px', textAlign: 'center' }}>¿Qué son los Agentes IA?</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }}>
+            <div>
+              <p style={{ fontSize: '18px', color: '#4b5563', lineHeight: '1.8', marginBottom: '24px' }}>
+                Los Agentes IA son sistemas autónomos que pueden realizar tareas complejas, tomar decisiones y aprender de la experiencia. Estos agentes revolucionan la automatización empresarial al:
+              </p>
+              <ul style={{ fontSize: '16px', color: '#6b7280', lineHeight: '1.8', paddingLeft: '20px' }}>
+                <li style={{ marginBottom: '12px' }}>Procesar información de múltiples fuentes simultáneamente</li>
+                <li style={{ marginBottom: '12px' }}>Adaptarse a nuevas situaciones sin programación adicional</li>
+                <li style={{ marginBottom: '12px' }}>Ejecutar workflows complejos de forma autónoma</li>
+                <li style={{ marginBottom: '12px' }}>Mejorar continuamente su rendimiento</li>
+              </ul>
+            </div>
+            <div style={{ background: 'linear-gradient(135deg, #00D4AA 0%, #0EA5E9 100%)', borderRadius: '20px', padding: '40px', color: 'white', textAlign: 'center', animation: 'slideInRight 1s ease-out 0.4s both' }}>
+              <h3 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '16px' }}>Automatización Inteligente</h3>
+              <p style={{ fontSize: '16px', opacity: 0.9 }}>Transforma procesos manuales en sistemas autónomos que operan 24/7.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ marginBottom: '80px', animation: 'fadeInUp 1s ease-out 0.8s both' }}>
+          <h2 style={{ fontSize: '42px', fontWeight: 'bold', color: '#1E3A8A', marginBottom: '48px', textAlign: 'center' }}>Ventajas de los Agentes IA</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px' }}>
+            {[
+              { title: "Eficiencia Operativa", description: "Automatización de tareas repetitivas y optimización de procesos" },
+              { title: "Disponibilidad 24/7", description: "Operación continua sin interrupciones ni descansos" },
+              { title: "Escalabilidad", description: "Capacidad de manejar volúmenes crecientes de trabajo" },
+              { title: "Precisión Consistente", description: "Eliminación de errores humanos y resultados predecibles" }
+            ].map((benefit, index) => (
+              <div key={index} style={{ background: 'white', padding: '32px', borderRadius: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.08)', border: '1px solid #f1f5f9', textAlign: 'center', animation: `fadeInUp 1s ease-out ${1 + index * 0.1}s both` }}>
+                <div style={{ width: '48px', height: '48px', background: 'linear-gradient(45deg, #1E3A8A, #00D4AA)', borderRadius: '50%', margin: '0 auto 20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div style={{ width: '24px', height: '24px', background: 'white', borderRadius: '50%' }}></div>
+                </div>
+                <h3 style={{ fontSize: '20px', fontWeight: 'bold', color: '#1E3A8A', marginBottom: '16px' }}>{benefit.title}</h3>
+                <p style={{ fontSize: '16px', color: '#6b7280', lineHeight: '1.6' }}>{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div style={{ background: 'linear-gradient(135deg, #1E3A8A 0%, #00D4AA 50%, #0EA5E9 100%)', borderRadius: '24px', padding: '60px', textAlign: 'center', color: 'white', animation: 'fadeInUp 1s ease-out 1.2s both' }}>
+          <h2 style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '24px' }}>¿Listo para Automatizar tu Negocio?</h2>
+          <p style={{ fontSize: '18px', marginBottom: '32px', opacity: 0.9 }}>Descubre cómo los Agentes IA pueden transformar tus procesos y aumentar tu productividad.</p>
+          <a href="/contacto" style={{ background: 'white', color: '#1E3A8A', padding: '16px 32px', borderRadius: '12px', textDecoration: 'none', fontWeight: '600', fontSize: '16px', display: 'inline-block', transition: 'transform 0.2s ease', boxShadow: '0 4px 20px rgba(255,255,255,0.3)' }}>Explorar Soluciones →</a>
+        </div>
+      </section>
+
+      <footer className="footer-mobile" style={{ backgroundColor: '#1E3A8A', color: 'white', padding: '60px 60px 40px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', marginBottom: '40px' }}>
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '20px' }}>
+                <img src="/ollin-logo-3.svg" alt="Ollin Labs" style={{ height: '48px', width: 'auto' }} />
+                <span style={{ fontSize: '24px', fontWeight: 'bold' }}>Ollin Labs</span>
+              </div>
+              <p style={{ color: '#a5b4fc', lineHeight: '1.4', margin: 0, fontSize: '12px', fontFamily: 'monospace', letterSpacing: '0.5px' }}>© 2025 Ollin Labs. Todos los derechos reservados.</p>
+            </div>
+            <div>
+              <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '20px', margin: '0 0 20px 0' }}>Navegación</h4>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                <li style={{ marginBottom: '12px' }}><a href="/" style={{ color: '#a5b4fc', textDecoration: 'none' }}>Inicio</a></li>
+                <li style={{ marginBottom: '12px' }}><a href="/nosotros" style={{ color: '#a5b4fc', textDecoration: 'none' }}>Nosotros</a></li>
+                <li style={{ marginBottom: '12px' }}><a href="/ecosystem" style={{ color: '#a5b4fc', textDecoration: 'none' }}>Ecosistema</a></li>
+                <li style={{ marginBottom: '12px' }}><a href="/contacto" style={{ color: '#a5b4fc', textDecoration: 'none' }}>Contacto</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '20px', margin: '0 0 20px 0' }}>Contacto</h4>
+              <div style={{ marginBottom: '16px' }}>
+                <p style={{ color: '#a5b4fc', margin: '0 0 8px 0' }}>Teléfono:</p>
+                <a href="tel:5621854056" style={{ color: 'white', textDecoration: 'none', fontSize: '18px', fontWeight: '500' }}>562-185-4056</a>
+              </div>
+              <div>
+                <p style={{ color: '#a5b4fc', margin: '0 0 12px 0' }}>Síguenos:</p>
+                <div style={{ display: 'flex', gap: '12px' }}>
+                  <a href="#" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', background: '#00D4AA', borderRadius: '8px', textDecoration: 'none', color: 'white', fontWeight: 'bold' }}>f</a>
+                  <a href="#" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', background: '#0EA5E9', borderRadius: '8px', textDecoration: 'none', color: 'white', fontWeight: 'bold' }}>ig</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
