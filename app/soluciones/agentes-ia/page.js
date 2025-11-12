@@ -21,15 +21,34 @@ export default function AgentesIA() {
       <Navigation currentPage="soluciones/agentes-ia" />
 
       <section className="hero-section-mobile" style={{ padding: '80px 60px', background: 'linear-gradient(135deg, #00D4AA 0%, #0EA5E9 50%, #1E3A8A 100%)', color: 'white', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'relative', zIndex: 1, maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ position: 'relative', zIndex: 1 }}>
           <h1 className="hero-title" style={{ fontSize: '56px', fontWeight: 'bold', margin: '0 0 32px 0', background: 'linear-gradient(45deg, #ffffff, #f0f9ff)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', animation: 'fadeInUp 1s ease-out 0.2s both' }}>Agentes IA</h1>
           <p style={{ fontSize: '24px', lineHeight: '1.6', margin: '0 auto 40px', opacity: 0.95, maxWidth: '800px', animation: 'fadeInUp 1s ease-out 0.4s both' }}>
             Automatiza procesos complejos con agentes inteligentes que aprenden y se adaptan a tu negocio.
           </p>
         </div>
+        
+        {/* Animated AI Agent Processing */}
+        <div style={{ position: 'absolute', top: '15%', right: '8%', width: '300px', height: '180px', background: 'rgba(255,255,255,0.1)', borderRadius: '16px', padding: '20px', backdropFilter: 'blur(10px)', animation: 'float 4s ease-in-out infinite' }}>
+          <div style={{ fontSize: '12px', marginBottom: '12px', opacity: 0.9 }}>Agente Procesando</div>
+          <div style={{ background: 'rgba(255,255,255,0.2)', borderRadius: '8px', padding: '12px', marginBottom: '12px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+              <span style={{ fontSize: '10px' }}>Tarea detectada</span>
+              <div style={{ width: '8px', height: '8px', background: '#00D4AA', borderRadius: '50%', animation: 'pulse 2s infinite' }}></div>
+            </div>
+            <div style={{ background: 'rgba(255,255,255,0.3)', height: '40px', borderRadius: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '10px' }}>
+              Ejecutando workflow...
+            </div>
+          </div>
+          <div style={{ fontSize: '10px', opacity: 0.8 }}>Autonomía: 100%</div>
+        </div>
+        
+        {/* Floating Elements */}
+        <div style={{ position: 'absolute', top: '25%', left: '12%', width: '80px', height: '80px', background: 'rgba(255,255,255,0.1)', borderRadius: '50%', animation: 'float 3s ease-in-out infinite 0.5s' }}></div>
+        <div style={{ position: 'absolute', bottom: '25%', right: '20%', width: '60px', height: '60px', background: 'rgba(0,212,170,0.3)', borderRadius: '50%', animation: 'float 4s ease-in-out infinite 1.5s' }}></div>
       </section>
 
-      <section style={{ padding: '80px 60px', maxWidth: '1200px', margin: '0 auto' }}>
+      <section style={{ padding: '80px 60px' }}>
         <div style={{ marginBottom: '80px', animation: 'fadeInUp 1s ease-out 0.2s both' }}>
           <h2 style={{ fontSize: '42px', fontWeight: 'bold', color: '#1E3A8A', marginBottom: '32px', textAlign: 'center' }}>¿Qué son los Agentes IA?</h2>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }}>
@@ -48,6 +67,35 @@ export default function AgentesIA() {
               <h3 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '16px' }}>Automatización Inteligente</h3>
               <p style={{ fontSize: '16px', opacity: 0.9 }}>Transforma procesos manuales en sistemas autónomos que operan 24/7.</p>
             </div>
+          </div>
+        </div>
+
+        <div style={{ marginBottom: '80px', animation: 'fadeInUp 1s ease-out 0.4s both' }}>
+          <h2 style={{ fontSize: '42px', fontWeight: 'bold', color: '#1E3A8A', marginBottom: '48px', textAlign: 'center' }}>Agentes IA para Empresas</h2>
+          <div style={{ display: 'grid', gap: '40px' }}>
+            {[
+              { title: "Automatización de Procesos", description: "Agentes que ejecutan workflows complejos de forma autónoma, reduciendo tiempos de procesamiento y eliminando errores humanos en tareas repetitivas.", color: "#00D4AA" },
+              { title: "Atención al Cliente Inteligente", description: "Sistemas conversacionales avanzados que comprenden contexto y emociones, proporcionando respuestas personalizadas y escalando a humanos cuando es necesario.", color: "#0EA5E9" },
+              { title: "Análisis Predictivo Autónomo", description: "Agentes que monitorean datos en tiempo real, identifican patrones y toman decisiones proactivas para optimizar operaciones y prevenir problemas.", color: "#1E3A8A" }
+            ].map((item, index) => (
+              <div key={index} style={{ display: 'grid', gridTemplateColumns: index % 2 === 0 ? '1fr 1fr' : '1fr 1fr', gap: '40px', alignItems: 'center', animation: `slideIn${index % 2 === 0 ? 'Left' : 'Right'} 1s ease-out ${0.6 + index * 0.2}s both` }}>
+                {index % 2 === 0 ? (
+                  <>
+                    <div style={{ background: `linear-gradient(135deg, ${item.color}, #ffffff)`, borderRadius: '20px', padding: '40px', textAlign: 'center', color: 'white' }}>
+                      <h3 style={{ fontSize: '20px', fontWeight: 'bold', color: '#1E3A8A' }}>{item.title}</h3>
+                    </div>
+                    <div><p style={{ fontSize: '18px', color: '#4b5563', lineHeight: '1.8' }}>{item.description}</p></div>
+                  </>
+                ) : (
+                  <>
+                    <div><p style={{ fontSize: '18px', color: '#4b5563', lineHeight: '1.8' }}>{item.description}</p></div>
+                    <div style={{ background: `linear-gradient(135deg, ${item.color}, #ffffff)`, borderRadius: '20px', padding: '40px', textAlign: 'center', color: 'white' }}>
+                      <h3 style={{ fontSize: '20px', fontWeight: 'bold', color: '#1E3A8A' }}>{item.title}</h3>
+                    </div>
+                  </>
+                )}
+              </div>
+            ))}
           </div>
         </div>
 
@@ -83,7 +131,6 @@ export default function AgentesIA() {
           <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', marginBottom: '40px' }}>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '20px' }}>
-                <img src="/ollin-logo-3.svg" alt="Ollin Labs" style={{ height: '48px', width: 'auto' }} />
                 <span style={{ fontSize: '24px', fontWeight: 'bold' }}>Ollin Labs</span>
               </div>
               <p style={{ color: '#a5b4fc', lineHeight: '1.4', margin: 0, fontSize: '12px', fontFamily: 'monospace', letterSpacing: '0.5px' }}>© 2025 Ollin Labs. Todos los derechos reservados.</p>
