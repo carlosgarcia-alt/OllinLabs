@@ -43,7 +43,7 @@ export default function Ecosystem() {
       ],
       logo: "MP",
       gradient: "linear-gradient(45deg, #0EA5E9, #1E3A8A)",
-      url: "https://mevi-sv1a.vercel.app/"
+      url: "https://mevi-mx.com/"
     }
   ];
 
@@ -646,7 +646,7 @@ export default function Ecosystem() {
             border: '2px solid #e2e8f0',
             position: 'relative'
           }}>
-            <a href="https://mevi-sv1a.vercel.app/" target="_blank" style={{ 
+            <a href="https://mevi-mx.com/" target="_blank" style={{ 
               background: 'linear-gradient(45deg, #1E3A8A, #00D4AA)',
               color: 'white', 
               border: 'none', 
